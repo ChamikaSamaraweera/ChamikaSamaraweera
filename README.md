@@ -1,6 +1,6 @@
-# TeamInfinity PVT LTD
+# TeamInfinity Developers
 
-Welcome to TeamInfinity PVT LTD's GitHub profile! We are a dynamic team dedicated to solving problems and fostering innovation online. Our expertise lies in developing various projects, including websites, software, and mobile apps. Explore our repositories to discover our latest projects and contributions to the tech community.
+Welcome to TeamInfinity Dev's GitHub profile! We are a dynamic team dedicated to solving problems and fostering innovation online. Our expertise lies in developing various projects, including websites, software, and mobile apps. Explore our repositories to discover our latest projects and contributions to the tech community.
 
 ## About Us
 
