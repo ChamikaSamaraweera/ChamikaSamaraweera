@@ -24,9 +24,9 @@ At TeamInfinity, we believe in the power of collaboration and creativity. Our mi
 
 ## Get in Touch
 
-- Website: [TeamInfinity](https://teaminfinity.tech)
-- Email: contact@teaminfinity.tech or support@teaminfinity.me
-- LinkedIn: [TeamInfinity](https://www.linkedin.com/company/teaminfinity)
+- Website: [TeamInfinity](https://teaminfinity.pro)
+- Email: contact@teaminfinity.pro or support@teaminfinity.me
+- LinkedIn: [Chamika Samaraweera]([https://www.linkedin.com/company/teaminfinity](https://www.linkedin.com/in/chamika-samaraweera/))
 - Twitter: [@TeamInfinity.me](https://twitter.com/TeamInfinityTech)
 
 Feel free to reach out to us for collaborations, inquiries, or just to say hello! We're always excited to connect with fellow developers and tech enthusiasts.
