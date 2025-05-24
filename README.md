@@ -143,7 +143,7 @@ Tackling complex challenges with innovative algorithmic solutions.
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=teaminfinitydev&theme=redical&hide_border=true" alt="Contribution Graph" />
 </div>
 
-## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/People/Raising%20Hands.png" alt="Connect" width="30" height="30" /> Let's Connect!
+## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Hand%20gestures/Raising%20Hands.png" alt="Connect" width="30" height="30" /> Let's Connect!
 
 <div align="center">
   
