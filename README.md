@@ -119,6 +119,43 @@ Tackling complex challenges with innovative algorithmic solutions.
 
 </div>
 
+## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Card%20File%20Box.png" alt="Repos" width="30" height="30" /> Featured Repositories
+
+<div align="center">
+  
+<!-- AntiDDoSPro -->
+<a href="https://github.com/teaminfinitydev/AntiDDoSPro">
+  <img width="45%" src="https://github-readme-stats.vercel.app/api/pin/?username=teaminfinitydev&repo=AntiDDoSPro&theme=radical&hide_border=true" />
+</a>
+
+<!-- PluginHiderX -->
+<a href="https://github.com/teaminfinitydev/PluginHiderX">
+  <img width="45%" src="https://github-readme-stats.vercel.app/api/pin/?username=teaminfinitydev&repo=PluginHiderX&theme=radical&hide_border=true" />
+</a>
+
+</div>
+
+<div align="center">
+  <table>
+    <tr>
+      <td align="center" width="50%">
+        <h3>🛡️ AntiDDoSPro</h3>
+        <p>Advanced DDoS protection system with real-time threat detection and mitigation capabilities</p>
+        <a href="https://github.com/teaminfinitydev/AntiDDoSPro">
+          <img src="https://img.shields.io/badge/View_Project-6366F1?style=for-the-badge&logo=github&logoColor=white" />
+        </a>
+      </td>
+      <td align="center" width="50%">
+        <h3>🔒 PluginHiderX</h3>
+        <p>Secure plugin management solution for enhanced server security and plugin protection</p>
+        <a href="https://github.com/teaminfinitydev/PluginHiderX">
+          <img src="https://img.shields.io/badge/View_Project-6366F1?style=for-the-badge&logo=github&logoColor=white" />
+        </a>
+      </td>
+    </tr>
+  </table>
+</div>
+
 <!--  ## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/Fire.png" alt="Fire" width="30" height="30" /> Featured Projects
 
 <div align="center">
