@@ -29,8 +29,8 @@ We are **TeamInfinity** - a passionate collective of developers, designers, and 
 <table>
   <tr>
     <td align="center"><img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Light%20Bulb.png" alt="Innovation" width="50" height="50"><br><b>Innovation</b><br>Pushing boundaries</td>
-    <td align="center"><img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/People/Handshake.png" alt="Collaboration" width="50" height="50"><br><b>Collaboration</b><br>Stronger together</td>
-    <td align="center"><img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Trophy.png" alt="Excellence" width="50" height="50"><br><b>Excellence</b><br>Quality first</td>
+    <td align="center"><img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Hand%20gestures/Handshake.png" alt="Collaboration" width="50" height="50"><br><b>Collaboration</b><br>Stronger together</td>
+    <td align="center"><img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Activities/Trophy.png" alt="Excellence" width="50" height="50"><br><b>Excellence</b><br>Quality first</td>
     <td align="center"><img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/Star.png" alt="Creativity" width="50" height="50"><br><b>Creativity</b><br>Think different</td>
   </tr>
 </table>
@@ -118,12 +118,12 @@ Tackling complex challenges with innovative algorithmic solutions.
 
 </div>
 
-## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/Fire.png" alt="Fire" width="30" height="30" /> Featured Projects
+<!--  ## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/Fire.png" alt="Fire" width="30" height="30" /> Featured Projects
 
 <div align="center">
   <img src="https://github-readme-stats.vercel.app/api/pin/?username=teaminfinitydev&repo=repo-name&theme=radical" />
   <img src="https://github-readme-stats.vercel.app/api/pin/?username=teaminfinitydev&repo=repo-name&theme=radical" />
-</div>
+</div> -->
 
 <!-- Replace 'repo-name' with your actual repository names -->
 
