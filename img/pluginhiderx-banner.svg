@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="800" height="200" viewBox="0 0 800 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Gradients -->
+    <linearGradient id="shieldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF6B00" />
+      <stop offset="100%" stop-color="#FFC000" />
+    </linearGradient>
+    
+    <!-- Filters -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="5" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+    
+    <filter id="titleGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="2" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+    
+    <!-- Clip paths -->
+    <clipPath id="shieldShape">
+      <polygon points="120,50 150,65 150,115 120,130 90,115 90,65" />
+    </clipPath>
+    
+    <!-- Grid pattern -->
+    <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="rgba(31, 31, 31, 0.7)" stroke-width="1"/>
+    </pattern>
+  </defs>
+  
+  <!-- Background -->
+  <rect x="0" y="0" width="800" height="200" rx="10" ry="10" fill="#141414" />
+  
+  <!-- Grid background -->
+  <rect x="0" y="0" width="800" height="200" fill="url(#grid)" />
+  
+  <!-- Rays animation -->
+  <g transform="translate(400, 100)">
+    <g opacity="0.3">
+      <!-- Animated rays -->
+      <g>
+        <line x1="0" y1="0" x2="300" y2="0" stroke="url(#shieldGradient)" stroke-width="2" opacity="0.3">
+          <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="0" to="360" dur="20s" repeatCount="indefinite" />
+        </line>
+        <line x1="0" y1="0" x2="300" y2="0" stroke="url(#shieldGradient)" stroke-width="2" opacity="0.3">
+          <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="45" to="405" dur="20s" repeatCount="indefinite" />
+        </line>
+        <line x1="0" y1="0" x2="300" y2="0" stroke="url(#shieldGradient)" stroke-width="2" opacity="0.3">
+          <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="90" to="450" dur="20s" repeatCount="indefinite" />
+        </line>
+        <line x1="0" y1="0" x2="300" y2="0" stroke="url(#shieldGradient)" stroke-width="2" opacity="0.3">
+          <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="135" to="495" dur="20s" repeatCount="indefinite" />
+        </line>
+        <line x1="0" y1="0" x2="300" y2="0" stroke="url(#shieldGradient)" stroke-width="2" opacity="0.3">
+          <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="180" to="540" dur="20s" repeatCount="indefinite" />
+        </line>
+        <line x1="0" y1="0" x2="300" y2="0" stroke="url(#shieldGradient)" stroke-width="2" opacity="0.3">
+          <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="225" to="585" dur="20s" repeatCount="indefinite" />
+        </line>
+        <line x1="0" y1="0" x2="300" y2="0" stroke="url(#shieldGradient)" stroke-width="2" opacity="0.3">
+          <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="270" to="630" dur="20s" repeatCount="indefinite" />
+        </line>
+        <line x1="0" y1="0" x2="300" y2="0" stroke="url(#shieldGradient)" stroke-width="2" opacity="0.3">
+          <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="315" to="675" dur="20s" repeatCount="indefinite" />
+        </line>
+      </g>
+    </g>
+  </g>
+  
+  <!-- Shield -->
+  <g transform="translate(110, 100)" filter="url(#glow)">
+    <!-- Shield body with pulse animation -->
+    <polygon points="0,-50 40,-25 40,25 0,50 -40,25 -40,-25" fill="url(#shieldGradient)">
+      <animateTransform attributeName="transform" attributeType="XML" type="scale" 
+                      values="1;1.05;1" dur="2s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0.9;1;0.9" dur="2s" repeatCount="indefinite" />
+    </polygon>
+    
+    <!-- Lock -->
+    <g transform="translate(0,5)">
+      <!-- Shackle -->
+      <path d="M -10,-10 C -10,-18 10,-18 10,-10 L 10,0 L -10,0 Z" fill="none" stroke="#141414" stroke-width="4" />
+      
+      <!-- Body -->
+      <rect x="-15" y="0" width="30" height="22" rx="4" ry="4" fill="#141414" />
+    </g>
+  </g>
+  
+  <!-- Plugins list -->
+  <g transform="translate(650, 100)">
+    <!-- Plugin 1 -->
+    <g transform="translate(0, -40)">
+      <rect x="-40" y="-12" width="80" height="24" rx="4" ry="4" fill="#2a2a2a" />
+      <text x="0" y="4" font-family="Segoe UI, sans-serif" font-size="10" font-weight="bold" fill="#888" text-anchor="middle">Essentials</text>
+      
+      <!-- Cover animation -->
+      <rect x="-40" y="-12" width="0" height="24" fill="url(#shieldGradient)" opacity="0.9">
+        <animate id="cover1" attributeName="width" from="0" to="80" begin="1s;cover4.end+4s" dur="0.5s" fill="freeze" />
+        <animate id="reset1" attributeName="width" from="80" to="0" begin="cover1.end+1s" dur="0.3s" fill="freeze" />
+      </rect>
+    </g>
+    
+    <!-- Plugin 2 -->
+    <g transform="translate(0, -10)">
+      <rect x="-40" y="-12" width="80" height="24" rx="4" ry="4" fill="#2a2a2a" />
+      <text x="0" y="4" font-family="Segoe UI, sans-serif" font-size="10" font-weight="bold" fill="#888" text-anchor="middle">WorldEdit</text>
+      
+      <!-- Cover animation -->
+      <rect x="-40" y="-12" width="0" height="24" fill="url(#shieldGradient)" opacity="0.9">
+        <animate id="cover2" attributeName="width" from="0" to="80" begin="cover1.begin+0.1s" dur="0.5s" fill="freeze" />
+        <animate id="reset2" attributeName="width" from="80" to="0" begin="reset1.begin+0.1s" dur="0.3s" fill="freeze" />
+      </rect>
+    </g>
+    
+    <!-- Plugin 3 -->
+    <g transform="translate(0, 20)">
+      <rect x="-40" y="-12" width="80" height="24" rx="4" ry="4" fill="#2a2a2a" />
+      <text x="0" y="4" font-family="Segoe UI, sans-serif" font-size="10" font-weight="bold" fill="#888" text-anchor="middle">Vault</text>
+      
+      <!-- Cover animation -->
+      <rect x="-40" y="-12" width="0" height="24" fill="url(#shieldGradient)" opacity="0.9">
+        <animate id="cover3" attributeName="width" from="0" to="80" begin="cover2.begin+0.1s" dur="0.5s" fill="freeze" />
+        <animate id="reset3" attributeName="width" from="80" to="0" begin="reset2.begin+0.1s" dur="0.3s" fill="freeze" />
+      </rect>
+    </g>
+    
+    <!-- Plugin 4 -->
+    <g transform="translate(0, 50)">
+      <rect x="-40" y="-12" width="80" height="24" rx="4" ry="4" fill="#2a2a2a" />
+      <text x="0" y="4" font-family="Segoe UI, sans-serif" font-size="10" font-weight="bold" fill="#888" text-anchor="middle">LuckPerms</text>
+      
+      <!-- Cover animation -->
+      <rect x="-40" y="-12" width="0" height="24" fill="url(#shieldGradient)" opacity="0.9">
+        <animate id="cover4" attributeName="width" from="0" to="80" begin="cover3.begin+0.1s" dur="0.5s" fill="freeze" />
+        <animate id="reset4" attributeName="width" from="80" to="0" begin="reset3.begin+0.1s" dur="0.3s" fill="freeze" />
+      </rect>
+    </g>
+  </g>
+  
+  <!-- Particles -->
+  <g>
+    <circle cx="150" cy="70" r="3" fill="url(#shieldGradient)" opacity="0.7">
+      <animate attributeName="cx" values="150;170" dur="3s" repeatCount="indefinite" />
+      <animate attributeName="cy" values="70;30" dur="3s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0;0.7;0" dur="3s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="650" cy="120" r="2" fill="url(#shieldGradient)" opacity="0.6">
+      <animate attributeName="cx" values="650;620" dur="5s" repeatCount="indefinite" />
+      <animate attributeName="cy" values="120;100" dur="5s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0;0.6;0" dur="5s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="350" cy="150" r="2.5" fill="url(#shieldGradient)" opacity="0.5">
+      <animate attributeName="cx" values="350;390" dur="4s" repeatCount="indefinite" />
+      <animate attributeName="cy" values="150;130" dur="4s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0;0.5;0" dur="4s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="250" cy="50" r="2" fill="url(#shieldGradient)" opacity="0.6">
+      <animate attributeName="cx" values="250;230" dur="6s" repeatCount="indefinite" />
+      <animate attributeName="cy" values="50;80" dur="6s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0;0.6;0" dur="6s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="450" cy="60" r="3" fill="url(#shieldGradient)" opacity="0.7">
+      <animate attributeName="cx" values="450;480" dur="7s" repeatCount="indefinite" />
+      <animate attributeName="cy" values="60;40" dur="7s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0;0.7;0" dur="7s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="550" cy="140" r="2" fill="url(#shieldGradient)" opacity="0.5">
+      <animate attributeName="cx" values="550;570" dur="4.5s" repeatCount="indefinite" />
+      <animate attributeName="cy" values="140;160" dur="4.5s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0;0.5;0" dur="4.5s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="180" cy="130" r="2.5" fill="url(#shieldGradient)" opacity="0.6">
+      <animate attributeName="cx" values="180;210" dur="5.5s" repeatCount="indefinite" />
+      <animate attributeName="cy" values="130;150" dur="5.5s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0;0.6;0" dur="5.5s" repeatCount="indefinite" />
+    </circle>
+  </g>
+  
+  <!-- Title -->
+  <g filter="url(#titleGlow)">
+    <text x="400" y="95" font-family="Segoe UI, sans-serif" font-size="48" font-weight="800" fill="url(#shieldGradient)" text-anchor="middle" letter-spacing="2">PluginHiderX</text>
+    <text x="400" y="125" font-family="Segoe UI, sans-serif" font-size="20" fill="#aaa" text-anchor="middle">Protect Your Server Plugins</text>
+  </g>
+</svg>
