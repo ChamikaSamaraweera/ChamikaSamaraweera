@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800px" height="200px" viewBox="0 0 800 200" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <!-- Blood Moon Gradient -->
+        <radialGradient id="bloodMoonGradient" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+            <stop offset="0%" stop-color="#ff5e5e">
+                <animate attributeName="stop-color" values="#ff5e5e;#ff0000;#cc0000;#ff0000;#ff5e5e" dur="10s" repeatCount="indefinite" />
+            </stop>
+            <stop offset="100%" stop-color="#330000">
+                <animate attributeName="stop-color" values="#330000;#220000;#440000;#220000;#330000" dur="8s" repeatCount="indefinite" />
+            </stop>
+        </radialGradient>
+        
+        <!-- Background gradient -->
+        <linearGradient id="bgGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" stop-color="#000000" />
+            <stop offset="100%" stop-color="#1a0000" />
+        </linearGradient>
+        
+        <!-- Text glow filter -->
+        <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+            <feGaussianBlur stdDeviation="4" result="blur" />
+            <feComposite in="SourceGraphic" in2="blur" operator="over" />
+        </filter>
+        
+        <!-- Particle effects -->
+        <filter id="particleBlur" x="0" y="0" width="100%" height="100%">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="1" />
+        </filter>
+    </defs>
+    
+    <!-- Background -->
+    <rect width="800" height="200" fill="url(#bgGradient)" />
+    
+    <!-- Blood Moon -->
+    <circle cx="700" cy="50" r="40" fill="url(#bloodMoonGradient)">
+        <animate attributeName="opacity" values="0.8;1;0.8" dur="5s" repeatCount="indefinite" />
+    </circle>
+    
+    <!-- Fog/Mist Effect -->
+    <g opacity="0.2">
+        <rect width="800" height="30" y="170" fill="#666666">
+            <animate attributeName="opacity" values="0.2;0.3;0.2" dur="8s" repeatCount="indefinite" />
+        </rect>
+    </g>
+    
+    <!-- Zombie Silhouettes -->
+    <!-- Zombie 1 -->
+    <g transform="translate(650, 150) scale(0.5)">
+        <path d="M30,0 C20,5 10,20 15,30 C20,40 25,35 30,40 C35,35 40,40 45,30 C50,20 40,5 30,0" fill="#003300">
+            <animateTransform attributeName="transform" type="translate" from="-50,0" to="100,0" dur="20s" repeatCount="indefinite" />
+        </path>
+        <path d="M20,40 C15,50 10,70 15,80 C20,75 25,80 30,75 C35,80 40,75 45,80 C50,70 45,50 40,40" fill="#003300">
+            <animateTransform attributeName="transform" type="translate" from="-50,0" to="100,0" dur="20s" repeatCount="indefinite" />
+        </path>
+        <!-- Arms -->
+        <path d="M15,50 C0,55 0,65 5,70" stroke="#003300" stroke-width="5" fill="none">
+            <animateTransform attributeName="transform" type="translate" from="-50,0" to="100,0" dur="20s" repeatCount="indefinite" />
+        </path>
+        <path d="M45,50 C60,55 60,65 55,70" stroke="#003300" stroke-width="5" fill="none">
+            <animateTransform attributeName="transform" type="translate" from="-50,0" to="100,0" dur="20s" repeatCount="indefinite" />
+        </path>
+    </g>
+    
+    <!-- Zombie 2 -->
+    <g transform="translate(500, 160) scale(0.4)">
+        <path d="M30,0 C20,5 10,20 15,30 C20,40 25,35 30,40 C35,35 40,40 45,30 C50,20 40,5 30,0" fill="#002200">
+            <animateTransform attributeName="transform" type="translate" from="-150,0" to="300,0" dur="25s" repeatCount="indefinite" />
+        </path>
+        <path d="M20,40 C15,50 10,70 15,80 C20,75 25,80 30,75 C35,80 40,75 45,80 C50,70 45,50 40,40" fill="#002200">
+            <animateTransform attributeName="transform" type="translate" from="-150,0" to="300,0" dur="25s" repeatCount="indefinite" />
+        </path>
+        <!-- Arms -->
+        <path d="M15,50 C0,55 0,65 5,70" stroke="#002200" stroke-width="5" fill="none">
+            <animateTransform attributeName="transform" type="translate" from="-150,0" to="300,0" dur="25s" repeatCount="indefinite" />
+        </path>
+        <path d="M45,50 C60,55 60,65 55,70" stroke="#002200" stroke-width="5" fill="none">
+            <animateTransform attributeName="transform" type="translate" from="-150,0" to="300,0" dur="25s" repeatCount="indefinite" />
+        </path>
+    </g>
+    
+    <!-- Zombie 3 -->
+    <g transform="translate(550, 155) scale(0.45)">
+        <path d="M30,0 C20,5 10,20 15,30 C20,40 25,35 30,40 C35,35 40,40 45,30 C50,20 40,5 30,0" fill="#004400">
+            <animateTransform attributeName="transform" type="translate" from="-350,0" to="400,0" dur="30s" repeatCount="indefinite" />
+        </path>
+        <path d="M20,40 C15,50 10,70 15,80 C20,75 25,80 30,75 C35,80 40,75 45,80 C50,70 45,50 40,40" fill="#004400">
+            <animateTransform attributeName="transform" type="translate" from="-350,0" to="400,0" dur="30s" repeatCount="indefinite" />
+        </path>
+        <!-- Arms -->
+        <path d="M15,50 C0,55 0,65 5,70" stroke="#004400" stroke-width="5" fill="none">
+            <animateTransform attributeName="transform" type="translate" from="-350,0" to="400,0" dur="30s" repeatCount="indefinite" />
+        </path>
+        <path d="M45,50 C60,55 60,65 55,70" stroke="#004400" stroke-width="5" fill="none">
+            <animateTransform attributeName="transform" type="translate" from="-350,0" to="400,0" dur="30s" repeatCount="indefinite" />
+        </path>
+    </g>
+    
+    <!-- Lightning Effect -->
+    <path d="M200,0 L215,40 L190,45 L210,85 L185,90 L220,150" stroke="#ffff99" stroke-width="3" fill="none" opacity="0">
+        <animate attributeName="opacity" values="0;0.8;0;0.3;0" dur="7s" repeatCount="indefinite" begin="2s" />
+    </path>
+    
+    <!-- Main Title -->
+    <text x="400" y="80" font-family="Impact, sans-serif" font-size="60" text-anchor="middle" fill="#b30000" filter="url(#glow)">
+        OUTBREAKX
+        <animate attributeName="fill" values="#b30000;#ff0000;#b30000" dur="4s" repeatCount="indefinite" />
+    </text>
+    
+    <!-- Subtitle -->
+    <text x="400" y="120" font-family="Arial, sans-serif" font-size="20" text-anchor="middle" fill="#cccccc">
+        ZOMBIE APOCALYPSE MODE
+        <animate attributeName="opacity" values="0.7;1;0.7" dur="3s" repeatCount="indefinite" />
+    </text>
+    
+    <!-- Tagline -->
+    <text x="400" y="160" font-family="Arial, sans-serif" font-size="16" font-style="italic" text-anchor="middle" fill="#999999">
+        Survive the Night. Defend the World.
+    </text>
+    
+    <!-- Particles -->
+    <g filter="url(#particleBlur)">
+        <!-- Random dots that appear and fade -->
+        <circle cx="100" cy="50" r="1" fill="#ff3333" opacity="0">
+            <animate attributeName="opacity" values="0;0.5;0" dur="2s" repeatCount="indefinite" begin="0s" />
+            <animate attributeName="cx" values="100;120;140" dur="2s" repeatCount="indefinite" begin="0s" />
+            <animate attributeName="cy" values="50;30;60" dur="2s" repeatCount="indefinite" begin="0s" />
+        </circle>
+        <circle cx="300" cy="70" r="1" fill="#ff3333" opacity="0">
+            <animate attributeName="opacity" values="0;0.5;0" dur="3s" repeatCount="indefinite" begin="1s" />
+            <animate attributeName="cx" values="300;320;280" dur="3s" repeatCount="indefinite" begin="1s" />
+            <animate attributeName="cy" values="70;90;60" dur="3s" repeatCount="indefinite" begin="1s" />
+        </circle>
+        <circle cx="500" cy="40" r="1" fill="#ff3333" opacity="0">
+            <animate attributeName="opacity" values="0;0.5;0" dur="2.5s" repeatCount="indefinite" begin="0.5s" />
+            <animate attributeName="cx" values="500;480;520" dur="2.5s" repeatCount="indefinite" begin="0.5s" />
+            <animate attributeName="cy" values="40;60;50" dur="2.5s" repeatCount="indefinite" begin="0.5s" />
+        </circle>
+        <circle cx="650" cy="60" r="1" fill="#ff3333" opacity="0">
+            <animate attributeName="opacity" values="0;0.5;0" dur="2.2s" repeatCount="indefinite" begin="1.5s" />
+            <animate attributeName="cx" values="650;670;640" dur="2.2s" repeatCount="indefinite" begin="1.5s" />
+            <animate attributeName="cy" values="60;40;70" dur="2.2s" repeatCount="indefinite" begin="1.5s" />
+        </circle>
+        <circle cx="200" cy="30" r="1" fill="#ff3333" opacity="0">
+            <animate attributeName="opacity" values="0;0.5;0" dur="1.8s" repeatCount="indefinite" begin="0.2s" />
+            <animate attributeName="cx" values="200;220;190" dur="1.8s" repeatCount="indefinite" begin="0.2s" />
+            <animate attributeName="cy" values="30;50;40" dur="1.8s" repeatCount="indefinite" begin="0.2s" />
+        </circle>
+    </g>
+    
+    <!-- Minecraft Block Border Elements -->
+    <rect x="0" y="0" width="20" height="20" fill="#333333" opacity="0.5" />
+    <rect x="780" y="0" width="20" height="20" fill="#333333" opacity="0.5" />
+    <rect x="0" y="180" width="20" height="20" fill="#333333" opacity="0.5" />
+    <rect x="780" y="180" width="20" height="20" fill="#333333" opacity="0.5" />
+</svg>
