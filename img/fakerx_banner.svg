@@ -1,0 +1,125 @@
+<svg viewBox="0 0 800 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2a2a2a"/>
+      <stop offset="50%" style="stop-color:#1a1a1a"/>
+      <stop offset="100%" style="stop-color:#0a0a0a"/>
+    </linearGradient>
+    
+    <linearGradient id="titleGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#55ff55"/>
+      <stop offset="50%" style="stop-color:#77ff77"/>
+      <stop offset="100%" style="stop-color:#55ff55"/>
+    </linearGradient>
+    
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge> 
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <rect width="800" height="200" fill="url(#bgGradient)"/>
+  
+  <!-- Pixelated border -->
+  <rect x="5" y="5" width="790" height="190" fill="none" stroke="#4a4a4a" stroke-width="2"/>
+  <rect x="10" y="10" width="780" height="180" fill="none" stroke="#3a3a3a" stroke-width="1"/>
+  
+  <!-- Server list background -->
+  <rect x="30" y="30" width="300" height="140" fill="#1e1e1e" stroke="#555" stroke-width="1" rx="5"/>
+  
+  <!-- Server list header -->
+  <rect x="30" y="30" width="300" height="25" fill="#333" rx="5 5 0 0"/>
+  <text x="180" y="47" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#fff">Server List</text>
+  
+  <!-- Server entry -->
+  <rect x="40" y="65" width="280" height="30" fill="#2a2a2a" stroke="#444" stroke-width="1" rx="3">
+    <animate attributeName="fill" values="#2a2a2a;#3a3a3a;#2a2a2a" dur="3s" repeatCount="indefinite"/>
+  </rect>
+  
+  <!-- Server icon -->
+  <rect x="45" y="70" width="20" height="20" fill="#4CAF50" rx="2"/>
+  <rect x="47" y="72" width="16" height="16" fill="#66BB6A" rx="1"/>
+  <rect x="49" y="74" width="12" height="12" fill="#81C784" rx="1"/>
+  
+  <!-- Server name -->
+  <text x="75" y="82" font-family="Arial, sans-serif" font-size="11" fill="#fff" font-weight="bold">My Minecraft Server</text>
+  
+  <!-- Player count (animated) -->
+  <text x="75" y="92" font-family="Arial, sans-serif" font-size="9" fill="#aaa">Players: 
+    <tspan fill="#55ff55">
+      <animate attributeName="opacity" values="1;0.5;1" dur="2s" repeatCount="indefinite"/>
+      <animate dur="4s" repeatCount="indefinite" 
+               values="5;8;12;15;20;18;14;10;7;5" 
+               attributeName="text-content"/>5
+    </tspan>
+    <tspan fill="#55ff55">/</tspan>
+    <tspan fill="#55ff55">20</tspan>
+  </text>
+  
+  <!-- Player list tooltip -->
+  <g opacity="0">
+    <animateTransform attributeName="transform" type="translate" values="0,0;10,0;0,0" dur="6s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;1;1;0;0" dur="6s" repeatCount="indefinite"/>
+    
+    <rect x="340" y="60" width="120" height="80" fill="#1a1a1a" stroke="#555" stroke-width="1" rx="3"/>
+    <text x="400" y="75" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#fff" font-weight="bold">Online Players</text>
+    
+    <text x="350" y="90" font-family="Arial, sans-serif" font-size="9" fill="#55ff55">• Notch</text>
+    <text x="350" y="102" font-family="Arial, sans-serif" font-size="9" fill="#55ff55">• Herobrine</text>
+    <text x="350" y="114" font-family="Arial, sans-serif" font-size="9" fill="#55ff55">• Steve</text>
+    <text x="350" y="126" font-family="Arial, sans-serif" font-size="9" fill="#55ff55">• Alex</text>
+  </g>
+  
+  <!-- Main title -->
+  <text x="550" y="70" font-family="Arial Black, sans-serif" font-size="48" font-weight="bold" fill="url(#titleGradient)" filter="url(#glow)">
+    FakerX
+    <animate attributeName="opacity" values="1;0.8;1" dur="3s" repeatCount="indefinite"/>
+  </text>
+  
+  <!-- Subtitle -->
+  <text x="550" y="95" font-family="Arial, sans-serif" font-size="14" fill="#aaa">
+    Fake Player Count Plugin
+  </text>
+  
+  <!-- Version badge -->
+  <rect x="550" y="105" width="60" height="18" fill="#4CAF50" rx="9">
+    <animate attributeName="fill" values="#4CAF50;#66BB6A;#4CAF50" dur="4s" repeatCount="indefinite"/>
+  </rect>
+  <text x="580" y="116" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="white" font-weight="bold">v1.0.0</text>
+  
+  <!-- Paper version badge -->
+  <rect x="620" y="105" width="80" height="18" fill="#FF9800" rx="9">
+    <animate attributeName="fill" values="#FF9800;#FFB74D;#FF9800" dur="4s" repeatCount="indefinite"/>
+  </rect>
+  <text x="660" y="116" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="white" font-weight="bold">Paper 1.21+</text>
+  
+  <!-- Features list -->
+  <text x="550" y="140" font-family="Arial, sans-serif" font-size="11" fill="#ccc">✓ Configurable fake player count</text>
+  <text x="550" y="155" font-family="Arial, sans-serif" font-size="11" fill="#ccc">✓ Custom player names in hover list</text>
+  <text x="550" y="170" font-family="Arial, sans-serif" font-size="11" fill="#ccc">✓ Real player count integration</text>
+  
+  <!-- Floating particles -->
+  <g opacity="0.6">
+    <circle cx="100" cy="50" r="2" fill="#55ff55">
+      <animate attributeName="cy" values="50;20;50" dur="4s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.6;1;0.6" dur="4s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="200" cy="80" r="1.5" fill="#77ff77">
+      <animate attributeName="cy" values="80;40;80" dur="5s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.4;0.8;0.4" dur="5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="150" cy="120" r="1" fill="#99ff99">
+      <animate attributeName="cy" values="120;90;120" dur="3s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.3;0.7;0.3" dur="3s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+  
+  <!-- Author credit -->
+  <text x="795" y="195" text-anchor="end" font-family="Arial, sans-serif" font-size="8" fill="#666">
+    by Chamika Samaraweera | codenexa.online
+  </text>
+</svg>
