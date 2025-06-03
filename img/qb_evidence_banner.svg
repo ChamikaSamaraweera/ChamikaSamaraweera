@@ -1,0 +1,251 @@
+<svg viewBox="0 0 1200 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Gradients -->
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f172a;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#1e293b;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#334155;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="textGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#60a5fa;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#3b82f6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1d4ed8;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="dnaGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#10b981;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#059669;stop-opacity:1" />
+    </linearGradient>
+    
+    <radialGradient id="scanGradient" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#60a5fa;stop-opacity:0.8" />
+      <stop offset="70%" style="stop-color:#3b82f6;stop-opacity:0.4" />
+      <stop offset="100%" style="stop-color:#1d4ed8;stop-opacity:0" />
+    </radialGradient>
+    
+    <!-- Filters -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    
+    <filter id="dropShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1200" height="300" fill="url(#bgGradient)"/>
+  
+  <!-- Background Pattern -->
+  <g opacity="0.1">
+    <pattern id="hexPattern" x="0" y="0" width="60" height="52" patternUnits="userSpaceOnUse">
+      <polygon points="30,2 52,15 52,37 30,50 8,37 8,15" fill="none" stroke="#60a5fa" stroke-width="1"/>
+    </pattern>
+    <rect width="1200" height="300" fill="url(#hexPattern)"/>
+  </g>
+  
+  <!-- Floating Evidence Icons -->
+  <g class="floating-icons" opacity="0.6">
+    <!-- DNA Helix -->
+    <g transform="translate(100, 80)">
+      <path d="M0 0 Q5 10 0 20 Q-5 30 0 40 Q5 50 0 60" stroke="url(#dnaGradient)" stroke-width="2" fill="none">
+        <animateTransform attributeName="transform" type="rotate" values="0;360" dur="8s" repeatCount="indefinite"/>
+      </path>
+      <path d="M10 0 Q5 10 10 20 Q15 30 10 40 Q5 50 10 60" stroke="url(#dnaGradient)" stroke-width="2" fill="none">
+        <animateTransform attributeName="transform" type="rotate" values="0;360" dur="8s" repeatCount="indefinite"/>
+      </path>
+      <g>
+        <line x1="0" y1="15" x2="10" y2="15" stroke="url(#dnaGradient)" stroke-width="1">
+          <animate attributeName="opacity" values="0;1;0" dur="2s" repeatCount="indefinite"/>
+        </line>
+        <line x1="0" y1="45" x2="10" y2="45" stroke="url(#dnaGradient)" stroke-width="1">
+          <animate attributeName="opacity" values="0;1;0" dur="2s" begin="0.5s" repeatCount="indefinite"/>
+        </line>
+      </g>
+    </g>
+    
+    <!-- Fingerprint -->
+    <g transform="translate(200, 200)">
+      <circle cx="0" cy="0" r="15" fill="none" stroke="#60a5fa" stroke-width="1.5">
+        <animate attributeName="r" values="10;20;10" dur="3s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="1;0.3;1" dur="3s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="0" cy="0" r="10" fill="none" stroke="#60a5fa" stroke-width="1"/>
+      <circle cx="0" cy="0" r="5" fill="none" stroke="#60a5fa" stroke-width="1"/>
+      <path d="M-5 -8 Q0 -12 5 -8 Q0 -4 -5 -8" fill="none" stroke="#60a5fa" stroke-width="1"/>
+    </g>
+    
+    <!-- Microscope -->
+    <g transform="translate(1000, 100)" fill="#10b981">
+      <rect x="-8" y="10" width="16" height="25" rx="2"/>
+      <circle cx="0" cy="0" r="8"/>
+      <rect x="-2" y="-15" width="4" height="15"/>
+      <rect x="-12" y="35" width="24" height="3"/>
+      <animateTransform attributeName="transform" type="translate" values="1000,100; 1000,95; 1000,100" dur="2s" repeatCount="indefinite"/>
+    </g>
+    
+    <!-- Evidence Bag -->
+    <g transform="translate(1100, 220)" fill="#f59e0b">
+      <rect x="-10" y="0" width="20" height="25" rx="2" fill="#f59e0b" opacity="0.7"/>
+      <rect x="-8" y="2" width="16" height="2" fill="#d97706"/>
+      <text x="0" y="15" text-anchor="middle" font-size="8" fill="#92400e">EV</text>
+      <animateTransform attributeName="transform" type="translate" values="1100,220; 1105,215; 1100,220" dur="4s" repeatCount="indefinite"/>
+    </g>
+    
+    <!-- Blood Drop -->
+    <g transform="translate(150, 200)" fill="#ef4444">
+      <path d="M0 0 Q-5 -10 0 -15 Q5 -10 0 0 Q-3 5 0 8 Q3 5 0 0" fill="#ef4444">
+        <animateTransform attributeName="transform" type="scale" values="1;1.1;1" dur="1.5s" repeatCount="indefinite"/>
+      </path>
+    </g>
+    
+    <!-- Bullet Casing -->
+    <g transform="translate(950, 220)" fill="#6b7280">
+      <rect x="-2" y="0" width="4" height="15" rx="2"/>
+      <rect x="-3" y="0" width="6" height="3" rx="1" fill="#9ca3af"/>
+      <animateTransform attributeName="transform" type="rotate" values="0;5;-5;0" dur="3s" repeatCount="indefinite"/>
+    </g>
+  </g>
+  
+  <!-- Main Title -->
+  <g transform="translate(600, 150)">
+    <!-- QB Text -->
+    <text x="-150" y="-20" text-anchor="middle" font-family="Arial Black, sans-serif" font-size="48" font-weight="900" fill="url(#textGradient)" filter="url(#glow)">
+      QB
+      <animate attributeName="opacity" values="0;1" dur="1s" begin="0s" fill="freeze"/>
+    </text>
+    
+    <!-- Evidence Text -->
+    <text x="0" y="-20" text-anchor="middle" font-family="Arial, sans-serif" font-size="48" font-weight="300" fill="#e2e8f0" filter="url(#dropShadow)">
+      Evidence
+      <animate attributeName="opacity" values="0;1" dur="1s" begin="0.5s" fill="freeze"/>
+    </text>
+    
+    <!-- Subtitle -->
+    <text x="0" y="15" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="400" fill="#94a3b8">
+      Advanced Forensic Investigation System for FiveM
+      <animate attributeName="opacity" values="0;1" dur="1s" begin="1s" fill="freeze"/>
+    </text>
+    
+    <!-- Version Badge -->
+    <g transform="translate(0, 35)">
+      <rect x="-25" y="0" width="50" height="20" rx="10" fill="#10b981" opacity="0.8">
+        <animate attributeName="opacity" values="0;0.8" dur="0.5s" begin="1.5s" fill="freeze"/>
+      </rect>
+      <text x="0" y="13" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="600" fill="white">
+        v1.0
+        <animate attributeName="opacity" values="0;1" dur="0.5s" begin="1.5s" fill="freeze"/>
+      </text>
+    </g>
+  </g>
+  
+  <!-- Scanning Line Effect -->
+  <g class="scan-line">
+    <line x1="0" y1="0" x2="0" y2="300" stroke="url(#scanGradient)" stroke-width="3" opacity="0.8">
+      <animateTransform attributeName="transform" type="translate" values="-10,0; 1210,0; -10,0" dur="8s" repeatCount="indefinite"/>
+    </line>
+  </g>
+  
+  <!-- Feature Icons -->
+  <g class="feature-icons" opacity="0.8">
+    <!-- DNA Analysis Icon -->
+    <g transform="translate(250, 100)">
+      <circle cx="0" cy="0" r="20" fill="rgba(16, 185, 129, 0.2)" stroke="#10b981" stroke-width="2">
+        <animate attributeName="r" values="18;22;18" dur="2s" repeatCount="indefinite"/>
+      </circle>
+      <path d="M-8 -10 Q0 -5 8 -10 Q0 0 -8 5 Q0 10 8 5" stroke="#10b981" stroke-width="2" fill="none"/>
+      <text x="0" y="35" text-anchor="middle" font-size="10" fill="#10b981" font-weight="600">DNA</text>
+    </g>
+    
+    <!-- Fingerprint Analysis Icon -->
+    <g transform="translate(400, 100)">
+      <circle cx="0" cy="0" r="20" fill="rgba(96, 165, 250, 0.2)" stroke="#60a5fa" stroke-width="2">
+        <animate attributeName="r" values="18;22;18" dur="2s" begin="0.5s" repeatCount="indefinite"/>
+      </circle>
+      <g stroke="#60a5fa" stroke-width="1.5" fill="none">
+        <circle cx="0" cy="0" r="8"/>
+        <circle cx="0" cy="0" r="4"/>
+        <path d="M-3 -6 Q0 -8 3 -6"/>
+      </g>
+      <text x="0" y="35" text-anchor="middle" font-size="10" fill="#60a5fa" font-weight="600">PRINTS</text>
+    </g>
+    
+    <!-- Ballistics Icon -->
+    <g transform="translate(800, 100)">
+      <circle cx="0" cy="0" r="20" fill="rgba(245, 158, 11, 0.2)" stroke="#f59e0b" stroke-width="2">
+        <animate attributeName="r" values="18;22;18" dur="2s" begin="1s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="0" cy="0" r="6" fill="none" stroke="#f59e0b" stroke-width="2"/>
+      <circle cx="0" cy="0" r="2" fill="#f59e0b"/>
+      <path d="M-8 -8 L8 8 M8 -8 L-8 8" stroke="#f59e0b" stroke-width="1"/>
+      <text x="0" y="35" text-anchor="middle" font-size="10" fill="#f59e0b" font-weight="600">BALLISTICS</text>
+    </g>
+    
+    <!-- Case Management Icon -->
+    <g transform="translate(950, 100)">
+      <circle cx="0" cy="0" r="20" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6" stroke-width="2">
+        <animate attributeName="r" values="18;22;18" dur="2s" begin="1.5s" repeatCount="indefinite"/>
+      </circle>
+      <rect x="-6" y="-8" width="12" height="16" rx="1" fill="none" stroke="#8b5cf6" stroke-width="1.5"/>
+      <line x1="-3" y1="-4" x2="3" y2="-4" stroke="#8b5cf6" stroke-width="1"/>
+      <line x1="-3" y1="0" x2="3" y2="0" stroke="#8b5cf6" stroke-width="1"/>
+      <line x1="-3" y1="4" x2="3" y2="4" stroke="#8b5cf6" stroke-width="1"/>
+      <text x="0" y="35" text-anchor="middle" font-size="10" fill="#8b5cf6" font-weight="600">CASES</text>
+    </g>
+  </g>
+  
+  <!-- Bottom Tech Border -->
+  <g transform="translate(0, 280)" stroke="#334155" stroke-width="1" fill="none" opacity="0.6">
+    <path d="M0 0 L50 0 L60 10 L150 10 L160 0 L250 0 L260 10 L350 10 L360 0 L450 0 L460 10 L550 10 L560 0 L650 0 L660 10 L750 10 L760 0 L850 0 L860 10 L950 10 L960 0 L1050 0 L1060 10 L1150 10 L1160 0 L1200 0">
+      <animate attributeName="stroke-opacity" values="0.3;0.8;0.3" dur="3s" repeatCount="indefinite"/>
+    </path>
+  </g>
+  
+  <!-- Particles -->
+  <g class="particles">
+    <circle cx="300" cy="50" r="1" fill="#60a5fa" opacity="0.6">
+      <animateTransform attributeName="transform" type="translate" values="0,0; 50,30; 0,0" dur="6s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0.6;0" dur="6s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="700" cy="250" r="1" fill="#10b981" opacity="0.6">
+      <animateTransform attributeName="transform" type="translate" values="0,0; -30,-20; 0,0" dur="8s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0.6;0" dur="8s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="900" cy="80" r="1" fill="#f59e0b" opacity="0.6">
+      <animateTransform attributeName="transform" type="translate" values="0,0; 20,40; 0,0" dur="5s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0.6;0" dur="5s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+  
+  <!-- Side Tech Elements -->
+  <g transform="translate(50, 150)" stroke="#334155" stroke-width="1" fill="none" opacity="0.4">
+    <circle cx="0" cy="0" r="15">
+      <animate attributeName="r" values="10;25;10" dur="4s" repeatCount="indefinite"/>
+      <animate attributeName="stroke-opacity" values="0.4;0.1;0.4" dur="4s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="0" cy="0" r="8"/>
+    <path d="M-5 0 L5 0 M0 -5 L0 5"/>
+  </g>
+  
+  <g transform="translate(1150, 150)" stroke="#334155" stroke-width="1" fill="none" opacity="0.4">
+    <circle cx="0" cy="0" r="15">
+      <animate attributeName="r" values="10;25;10" dur="4s" begin="2s" repeatCount="indefinite"/>
+      <animate attributeName="stroke-opacity" values="0.4;0.1;0.4" dur="4s" begin="2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="0" cy="0" r="8"/>
+    <path d="M-5 0 L5 0 M0 -5 L0 5"/>
+  </g>
+  
+  <!-- GitHub Integration Hint -->
+  <g transform="translate(1050, 30)" opacity="0.7">
+    <path d="M0 0 Q-5 -3 -10 0 Q-5 3 0 0 Q5 -3 10 0 Q5 3 0 0" fill="#6b7280">
+      <animateTransform attributeName="transform" type="scale" values="1;1.2;1" dur="3s" repeatCount="indefinite"/>
+    </path>
+    <text x="0" y="20" text-anchor="middle" font-size="8" fill="#6b7280">GitHub Ready</text>
+  </g>
+</svg>
