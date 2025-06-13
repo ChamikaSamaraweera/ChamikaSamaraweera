@@ -15,7 +15,7 @@
   
   <!-- Brand Text -->
   <text x="50" y="80" font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="#dc2626">
-    NEXA MENU
+    QB MENU
     <animate attributeName="opacity" values="0;1" dur="1s" begin="0s"/>
   </text>
   
