@@ -136,7 +136,9 @@ Tackling complex challenges with innovative algorithmic solutions.
 <a href="https://github.com/teaminfinitydev/PluginHiderX">
   <img width="45%" src="https://github-readme-stats.vercel.app/api/pin/?username=teaminfinitydev&repo=PluginHiderX&theme=radical&hide_border=true" />
 </a>
-
+<a href="https://github.com/teaminfinitydev/laravel-activity-log-discord">
+  <img width="45%" src="https://github-readme-stats.vercel.app/api/pin/?username=teaminfinitydev&repo=laravel-activity-log-discord&theme=radical&hide_border=true" />
+</a>
 </div>
 
 <div align="center">
@@ -153,6 +155,13 @@ Tackling complex challenges with innovative algorithmic solutions.
         <h3>🔒 PluginHiderX</h3>
         <p>Secure plugin management solution for enhanced server security and plugin protection</p>
         <a href="https://github.com/teaminfinitydev/PluginHiderX">
+          <img src="https://img.shields.io/badge/View_Project-6366F1?style=for-the-badge&logo=github&logoColor=white" />
+        </a>
+      </td>
+      <td align="center" width="50%">
+        <h3>Laravel Activity Log Discord</h3>
+        <p>A powerful Laravel package that logs user activities and system events, then sends beautiful notifications to Discord channels via webhooks. Perfect for monitoring your application's important events in real-time.</p>
+        <a href="https://github.com/teaminfinitydev/laravel-activity-log-discord">
           <img src="https://img.shields.io/badge/View_Project-6366F1?style=for-the-badge&logo=github&logoColor=white" />
         </a>
       </td>
