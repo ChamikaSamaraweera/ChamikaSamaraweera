@@ -23,9 +23,13 @@
 > *"Innovation is seeing what everybody has seen and thinking what nobody has thought."*
 
 We are **TeamInfinity** - a passionate collective of developers, designers, and problem-solvers dedicated to crafting exceptional digital experiences. Our mission is to transform ideas into reality through cutting-edge technology and creative solutions.
-<br>
+
+
+
 [![trophy](https://github-profile-trophy.vercel.app/?username=teaminfinitydev)](https://github.com/teaminfinitydev)
-<br>
+
+
+
 
 ### <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Sparkling%20Heart.png" alt="Heart" width="25" height="25" /> Our Values
 
