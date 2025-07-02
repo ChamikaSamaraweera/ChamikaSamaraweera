@@ -146,6 +146,9 @@ Tackling complex challenges with innovative algorithmic solutions.
 <a href="https://github.com/teaminfinitydev/laravel-activity-log-discord">
   <img width="45%" src="https://github-readme-stats.vercel.app/api/pin/?username=teaminfinitydev&repo=laravel-activity-log-discord&theme=radical&hide_border=true" />
 </a>
+<a href="https://github.com/teaminfinitydev/laravel-sms-notify">
+  <img width="45%" src="https://github-readme-stats.vercel.app/api/pin/?username=teaminfinitydev&repo=laravel-sms-notify&theme=radical&hide_border=true" />
+</a>
 </div>
 
 <div align="center">
