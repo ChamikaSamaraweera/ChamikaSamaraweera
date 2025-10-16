@@ -205,10 +205,10 @@ We're always excited to collaborate on innovative projects and connect with fell
 
 ### 📬 Reach Out To Us
 
-<a href="https://teaminfinity.pro">
+<a href="https://teaminfinity.lk">
   <img src="https://img.shields.io/badge/🌐_Visit_Our_Website-6366F1?style=for-the-badge" alt="Website" />
 </a>
-<a href="mailto:contact@teaminfinity.pro">
+<a href="mailto:hello@teaminfinity.lk">
   <img src="https://img.shields.io/badge/📧_Send_Us_An_Email-EA4335?style=for-the-badge" alt="Email" />
 </a>
 <a href="https://www.linkedin.com/in/chamika-samaraweera/">
@@ -216,7 +216,7 @@ We're always excited to collaborate on innovative projects and connect with fell
 </a>
 
 ### 📧 Alternative Contact
-**support@teaminfinity.me**
+**chamika@teaminfinity.lk**
 
 </div>
 
