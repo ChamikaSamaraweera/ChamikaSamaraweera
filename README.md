@@ -6,8 +6,8 @@
 
 <div align="center">
   
-  [![Website](https://img.shields.io/badge/Website-teaminfinity.pro-6366F1?style=for-the-badge&logo=google-chrome&logoColor=white)](https://teaminfinity.pro)
-  [![Email](https://img.shields.io/badge/Email-contact%40teaminfinity.pro-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:contact@teaminfinity.pro)
+  [![Website](https://img.shields.io/badge/Website-teaminfinity.lk-6366F1?style=for-the-badge&logo=google-chrome&logoColor=white)](https://teaminfinity.lk)
+  [![Email](https://img.shields.io/badge/Email-contact%40teaminfinity.pro-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:hello@teaminfinity.lk)
   [![LinkedIn](https://img.shields.io/badge/LinkedIn-Chamika_Samaraweera-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/chamika-samaraweera/)
   
 </div>
